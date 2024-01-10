@@ -1,0 +1,61 @@
+[
+    {
+        "look" : "https://i.ebayimg.com/images/g/4esAAOSwZb5kZot0/s-l1200.webp",
+        "name" : "KD 15",
+        "price":   8095.00
+    },
+
+    {
+        "look" : "https://ph-test-11.slatic.net/p/1901f42fcb5617de6028ce425dabea7c.jpg",
+        "name" : "LINING 808",
+        "price":   9209.25
+    },
+
+    {
+        "look" : "https://www.capital.com.ph/cdn/shop/products/DD9535-003.jpg?v=1700720444",
+        "name" : "PRECISION 6",
+        "price":   3495.00
+    },
+
+    {
+        "look" : "https://www.anta.ph/cdn/shop/files/822331106-1_1_bau_sqr.jpg?v=1703143356&width=800",
+        "name" : "ANTA SHOCK WAVE 5",
+        "price":   7595.00
+    },
+
+    {
+        "look" : "https://media.karousell.com/media/photos/products/2023/4/3/nike_lebron_nxxt_gen_ep__white_1680514951_a479be57.jpg",
+        "name" : "LEBRON NXXT GEN",
+        "price":   6895.00
+    },
+
+    {
+        "look" : "https://www.tobys.com/cdn/shop/files/2_b550320e-e686-452a-b558-5f0ec2103c30.jpg?v=1702428128",
+        "name" : "IMMORTALITY 3",
+        "price":   4295.00
+    },
+
+    {
+        "look" : "https://sneakernews.com/wp-content/uploads/2023/11/nike-gt-cut-3-spring-2024-release-info-DV2918-101-7.jpg",
+        "name" : "GT CUT 3",
+        "price":   5023.00
+    },
+
+    {
+        "look" : "https://pimpkicks.com.ph/cdn/shop/products/NikeLebron20TimeMachineMen_s.png?v=1667376087",
+        "name" : "LEBRON 20",
+        "price":   10895.00
+    },
+
+    {
+        "look" : "https://pimpkicks.com.ph/cdn/shop/products/NikeKobe5Protro5XChampLakersMen_s.png?v=1643351976",
+        "name" : " KOBE 5 ",
+        "price":   8372.10
+    },
+
+    {
+        "look" : "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2023%2F09%2Fnike-book-1-announcement-release-date-1.jpg?cbr=1&q=90",
+        "name" : "BOOK 1",
+        "price":   8372.10
+    }
+]

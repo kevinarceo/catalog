@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <style>
+        /* CSS styles for centering */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body {
+            font-family: Arial, sans-serif; /* Example font-family */
+        }
+
+        /* CSS styles for product items */
+        #sapatos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            gap: 20px;
+            max-width: 1200px; /* Limit the maximum width of the container */
+            width: 100%;
+        }
+    
+        .product-item {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            width: 200px;
+            height: 350px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .item-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    
+        .shoes-name {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+    
+        .product-price {
+            font-weight: bold;
+            color: #333;
+        }
+    
+        .add-to-cart-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    
+        .add-to-cart-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="sapatos"></div>
+
+    <script>
+        fetch('sapatos.json') 
+            .then(response => response.json())
+            .then(shoesInventory => {
+                let shoes = "";
+                for (const shoesProd of shoesInventory) {
+                    shoes += `
+                        <div class="product-item">
+                            <img src="${shoesProd.look}" alt="${shoesProd.name}" class="item-image">
+                            <h3 class="shoes-name">${shoesProd.name}</h3>
+                            <p class="product-price">&#8369;${shoesProd.price}</p>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    `;
+                }
+                document.querySelector("#sapatos").innerHTML = shoes;
+            })
+            .catch(error => {
+                console.log('Error fetching data:', error);
+            });
+    </script>
+</body>
+</html>
